@@ -1,0 +1,25 @@
+#!/bin/bash
+
+touchpadName="MSFT0001:00 04F3:3138 Touchpad"
+touchpadTap="libinput Tapping Enabled"
+touchpadStatus=$(xinput list-props $touchpadName|grep "Tapping Enabled ("|awk '{print $5}')
+
+if ! [ x"$1" = x ]; then 
+	if [ $checkLock == "on" ]; then
+  		xinput set-prop $touchpadName $touchpadTap 0
+  		checkLock="off"
+
+
+	elif [[ "$checkLock" == "on" ]]; then
+  		xinput set-prop $touchpadName $touchpadTap 1
+  		checkLock="on"
+	fi
+fi
+
+if [[ "${touchpadStatus}" == 1 ]]; then
+    checkLock="on"
+    exit 0
+else 
+    checkLock="off"
+    exit 1
+fi

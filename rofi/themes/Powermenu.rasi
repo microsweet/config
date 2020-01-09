@@ -1,0 +1,14 @@
+@import "colors"
+@import "1line"
+
+#window {
+    width: 320px;
+    font: "SF Pro Display 11";
+}
+
+#element {
+    background-color:      #00000000;
+    border-radius: 4px;
+    padding:    10px 10px 10px 10px;
+    spacing: 30;
+}

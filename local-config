@@ -1,0 +1,15 @@
+####################################
+#
+#      local config
+#
+####################################
+
+# Lock screen
+#bindsym $mod+9 exec --no-startup-id blurlock
+bindsym $mod+9 exec --no-startup-id "i3lock -i ~/.config/wallpaper/daa3cd11728b4710d58f261ecdcec3fdfd0323461.png"
+
+exec_always --no-startup-id "feh --bg-fill ~/.config/wallpaper/4edfa3cc7cd98d103b35eb302e3fb80e7aec90d41.png"
+
+exec_always --no-startup-id "xautolock -time 10 -locker 'i3lock -i ~/.config/wallpaper/daa3cd11728b4710d58f261ecdcec3fdfd0323461.png'"
+exec_always --no-startup-id "xss-lock -- i3lock -i ~/.config/wallpaper/daa3cd11728b4710d58f261ecdcec3fdfd0323461.png"
+
