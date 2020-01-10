@@ -112,9 +112,9 @@ export NLS_LANG="AMERICAN_AMERICA".ZHS16GBK
 
 setopt no_nomatch
 
-export EDITOR='vim'
+export EDITOR='nvim'
 
-alias nv='nvim'
+alias vim='nvim'
 alias land='cd ~/workspace/eclipse/landtax-site/landtax-modules/landtax-site/src/main/'
 
 function zle-keymap-select {
