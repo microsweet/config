@@ -155,3 +155,4 @@ source ~/.config/zsh/completion.zsh
 if [ -f ~/.sconfig/zsh/zshrc ]; then
 	source ~/.sconfig/zsh/zshrc
 fi
+alias senv='source ~/.pyenv/bin/activate'
