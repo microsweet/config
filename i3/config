@@ -113,7 +113,6 @@ exec_always --no-startup-id "xrandr --output DVI-D-0 --mode 1920x1080 --pos 0x0 
 
 exec_always --no-startup-id fcitx
 exec_always --no-startup-id "~/.config/polybar/launch.sh"
-exec --no-startup-id electron-ssr
 exec_always --no-startup-id blueman-applet
 exec --no-startup-id nm-applet
 exec --no-startup-id redshift
