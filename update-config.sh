@@ -15,6 +15,8 @@ cp -r ./ranger/ ~/.config
 cp -r ./neofetch/ ~/.config
 cp -r ./fontconfig/ ~/.config
 cp -r ./zsh/ ~/.config
+#win字体文件，自行创建符号链接到/usr/share/fonts/
+cp -r ./winfont/ ~/.config
 
 cp -r ./Scripts/ ~/
 
