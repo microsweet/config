@@ -69,7 +69,7 @@ ZSH_THEME="ys"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git, vi-mode)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -106,7 +106,7 @@ source ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 #source /home/microsweet/.oh-my-zsh/custom/plugins/incr/incr*.zsh
 #source /home/microsweet/.oh-my-zsh/custom/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 source ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source ~/.oh-my-zsh/custom/plugins/vi-mode/vi-mode.plugin.zsh
+#source ~/.oh-my-zsh/custom/plugins/vi-mode/vi-mode.plugin.zsh
 
 export NLS_LANG="AMERICAN_AMERICA".ZHS16GBK
 
