@@ -16,7 +16,7 @@ cp -r ./neofetch/ ~/.config
 cp -r ./fontconfig/ ~/.config
 cp -r ./zsh/ ~/.config
 
-cp -r ./Scripts/ ~/
+cp -r ./Scripts/ ~/.Scripts
 
 cp ../config/zshrc ~/.zshrc
 cp ../config/xprofile ~/.xprofile
