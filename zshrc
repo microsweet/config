@@ -102,6 +102,9 @@ source $ZSH/oh-my-zsh.sh
 #set open neofetch
 #neofetch
 
+zle -N history-substring-search-up
+zle -N history-substring-search-down
+
 source ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 #source /home/microsweet/.oh-my-zsh/custom/plugins/incr/incr*.zsh
 #source /home/microsweet/.oh-my-zsh/custom/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
