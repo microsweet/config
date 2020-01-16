@@ -134,6 +134,7 @@ inoremap <silent><expr> <Tab>
 			\ coc#refresh()
 inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<CR>"
+nnoremap fmt :call CocAction('format')<CR>
 " Using CocList
 " Show all diagnostics
 "nnoremap <silent> <space>a  :<C-u>CocList diagnostics<cr>
