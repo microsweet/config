@@ -8,7 +8,7 @@ cp -r ./polybar/ ~/.config
 cp ~/.config/local-config.ini ~/.config/polybar/
 
 rm -rf ~/.config/nvim
-if [ ! -d "/home/$USER/.config/vim-plugin/" ]; then
+if [ ! -d "/$HOME/.config/vim-plugin/" ]; then
 	mkdir ~/.config/vim-plugin
 else
 	echo '文件夹已存在'
