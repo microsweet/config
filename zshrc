@@ -158,4 +158,10 @@ source ~/.config/zsh/completion.zsh
 if [ -f ~/.sconfig/zsh/zshrc ]; then
 	source ~/.sconfig/zsh/zshrc
 fi
+
+# 启动时自动启动X
+if [[ ! $DISPLAY && $XDG_VTNR -eq 1 ]]; then
+  exec startx
+fi
+
 alias senv='source ~/.pyenv/bin/activate'
