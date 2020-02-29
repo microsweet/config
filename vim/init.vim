@@ -23,6 +23,7 @@ set scrolloff=10
 " edit <++>
 map <LEADER><LEADER> <ESC>/<++><CR>:nohlsearch<CR>d4li
 
+noremap S :w<CR>
 noremap ; :
 noremap sv :set splitright<CR>:vsplit<CR>
 noremap sou :source $MYVIMRC<CR>
@@ -56,7 +57,6 @@ autocmd BufRead,BufNewFile *.html setlocal ts=4 sts=4 sw=4 et
 autocmd BufRead,BufNewFile *.js setlocal ts=2 sts=2 sw=2 et
 
 
-
 " ##############################
 " #
 " # install plug with plug
@@ -78,6 +78,21 @@ Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 " color
 Plug 'gko/vim-coloresque', { 'for': ['vim-plug', 'php', 'html', 'javascript', 'css', 'less'] }
+Plug 'mzlogin/vim-markdown-toc'
+" 配色主题
+Plug 'morhetz/gruvbox'
+" 代码高亮
+Plug 'numirias/semshi', {'do': ':UpdateRemotePlugins'}
+" 自动补全括号
+Plug 'jiangmiao/auto-pairs'
+" 注释(<leader>c<spacd>; <leader>c$)
+Plug 'scrooloose/nerdcommenter'
+" 代码折叠(zo zO zc zC)
+Plug 'tmhedberg/SimpylFold'
+
+" Debugger
+" Plug 'puremourning/vimspector', {'do': './install_gadget.py --enable-python'}
+
 call plug#end()
 
 
@@ -268,9 +283,9 @@ func! CompileRunGcc()
   elseif &filetype == 'sh'
     :!time bash %
   elseif &filetype == 'python'
-"    set splitbelow
-    set splitright
-    :vsp
+    set splitbelow
+    "set splitright
+    :sp
     :term python3 %
   elseif &filetype == 'html'
     exec "!chromium % &"
@@ -367,4 +382,18 @@ command! -bang BTags
   \                     tail -n +\$(echo {3} | tr -d \";\\\"\") {2} |
   \                     head -n 16"'
   \ })
+
+
+" ##############################
+" #
+" # 修复悬浮窗文字配色不能设置问题
+" #
+" ##############################
+
+colorscheme gruvbox
+augroup color
+	autocmd!
+	autocmd BufRead,BufNewFile * colorscheme gruvbox
+	autocmd BufRead,BufNewFile * hi Pmenu ctermbg=DarkGrey
+augroup END
 

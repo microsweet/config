@@ -1,37 +1,39 @@
 echo copy config from git resposity to .config
-cp -r ./i3/ ~/.config
-cp -r ./rofi/ ~/.config
-cp -r ./dunst/ ~/.config
-cp -r ./picom/ ~/.config
-cp -r ./polybar/ ~/.config
+cp -r ./i3/ $HOME/.config
+cp -r ./rofi/ $HOME/.config
+cp -r ./dunst/ $HOME/.config
+cp -r ./picom/ $HOME/.config
+cp -r ./polybar/ $HOME/.config
+cp -r ./alacritty/ $HOME/.config
 
-cp ~/.config/local-config.ini ~/.config/polybar/
+cp $HOME/.config/local-config.ini $HOME/.config/polybar/
 
-rm -rf ~/.config/nvim
+rm -rf $HOME/.config/nvim
 if [ ! -d "/$HOME/.config/vim-plugin/" ]; then
-	mkdir ~/.config/vim-plugin
+	mkdir $HOME/.config/vim-plugin
 else
 	echo '文件夹已存在'
 fi
-cp -r ./vim/ ~/.config/nvim
-ln -s ~/.config/vim-plugin ~/.config/nvim/plugged
-ln -s ~/.config/nvim ~/.vim
-cp -r ./fish/ ~/.config
-cp -r ./ranger/ ~/.config
-cp -r ./neofetch/ ~/.config
-cp -r ./fontconfig/ ~/.config
-cp -r ./zsh/ ~/.config
+cp -r ./vim/ $HOME/.config/nvim
+ln -s $HOME/.config/vim-plugin $HOME/.config/nvim/plugged
+rm -f $HOME/.vim
+ln -s $HOME/.config/nvim $HOME/.vim
+cp -r ./fish/ $HOME/.config
+cp -r ./ranger/ $HOME/.config
+cp -r ./neofetch/ $HOME/.config
+cp -r ./fontconfig/ $HOME/.config
+cp -r ./zsh/ $HOME/.config
 #win字体文件，自行创建符号链接到/usr/share/fonts/
-cp -r ./winfont/ ~/.config
+cp -r ./winfont/ $HOME/.config
 
-cp -r ./Scripts/ ~/.Scripts
+cp -r ./Scripts/ $HOME/.Scripts
 
-cp ../config/zshrc ~/.zshrc
-cp ../config/xprofile ~/.xprofile
+cp ../config/zshrc $HOME/.zshrc
+cp ../config/xprofile $HOME/.xprofile
 echo copy complete
 
 echo set local config
-cat ~/.config/local-config >> /home/microsweet/.config/i3/config 
+cat $HOME/.config/local-config >> /home/microsweet/.config/i3/config 
 
 #sed -i '/\[bar\/i3mainbar\]/a\monitor\ \=\ \$\{env\:MONITOR\:eDP\}' ~/.config/polybar/config
 

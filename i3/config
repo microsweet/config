@@ -90,8 +90,8 @@ bindsym $mod+Shift+i exec ~/.config/polybar/scripts/systray-toggle.sh
 #
 ##########################
 # Start applications
-bindsym $mod+Return exec st
-#bindsym $mod+Return exec termite
+#bindsym $mod+Return exec st
+bindsym $mod+Return exec alacritty
 #bindsym $mod+d exec "emacsclient -c"
 
 # Start applications on specific workspaces
