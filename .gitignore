@@ -28,6 +28,7 @@
 /vim/plugged/
 /vim/sessions/
 /vim/.netrwhist
+!/vm-win.service
 !/winfont
 !/xprofile
 !/zsh
