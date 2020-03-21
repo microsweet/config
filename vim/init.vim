@@ -85,7 +85,7 @@ Plug 'morhetz/gruvbox'
 Plug 'numirias/semshi', {'do': ':UpdateRemotePlugins'}
 " 自动补全括号
 Plug 'jiangmiao/auto-pairs'
-" 注释(<leader>c<spacd>; <leader>c$)
+" 注释(<leader>c<spacd>; <leader>c$; <leader>cm)
 Plug 'scrooloose/nerdcommenter'
 " 代码折叠(zo zO zc zC)
 Plug 'tmhedberg/SimpylFold'
