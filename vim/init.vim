@@ -85,7 +85,7 @@ Plug 'morhetz/gruvbox'
 Plug 'numirias/semshi', {'do': ':UpdateRemotePlugins'}
 " 自动补全括号
 Plug 'jiangmiao/auto-pairs'
-" 注释(<leader>c<spacd>; <leader>c$; <leader>cm)
+" 注释(<leader>c<spacd>; <leader>c$)
 Plug 'scrooloose/nerdcommenter'
 " 代码折叠(zo zO zc zC)
 Plug 'tmhedberg/SimpylFold'
@@ -93,6 +93,8 @@ Plug 'tmhedberg/SimpylFold'
 " Debugger
 " Plug 'puremourning/vimspector', {'do': './install_gadget.py --enable-python'}
 
+" vim-go
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 call plug#end()
 
 
@@ -294,6 +296,10 @@ func! CompileRunGcc()
   elseif &filetype == 'tex'
     silent! exec "VimtexStop"
     silent! exec "VimtexCompile"
+  elseif &filetype == 'go'
+    set splitbelow
+    :sp
+    :term go run .
   endif
 endfunc
 
@@ -326,6 +332,38 @@ set ttimeoutlen=150
 autocmd InsertLeave * call Fcitx2en()
 "进入插入模式
 "autocmd InsertEnter * call Fcitx2zh()
+
+" ##############################
+" #
+" # vim-go
+" #
+" ##############################
+
+let g:go_def_mapping_enabled = 0
+let g:go_template_autocreate = 0
+let g:go_textobj_enabled = 0
+let g:go_auto_type_info = 1
+let g:go_def_mapping_enabled = 0
+let g:go_highlight_array_whitespace_error = 1
+let g:go_highlight_build_constraints = 1
+let g:go_highlight_chan_whitespace_error = 1
+let g:go_highlight_extra_types = 1
+let g:go_highlight_fields = 1
+let g:go_highlight_format_strings = 1
+let g:go_highlight_function_calls = 1
+let g:go_highlight_function_parameters = 1
+let g:go_highlight_functions = 1
+let g:go_highlight_generate_tags = 1
+let g:go_highlight_methods = 1
+let g:go_highlight_operators = 1
+let g:go_highlight_space_tab_error = 1
+let g:go_highlight_string_spellcheck = 1
+let g:go_highlight_structs = 1
+let g:go_highlight_trailing_whitespace_error = 1
+let g:go_highlight_types = 1
+let g:go_highlight_variable_assignments = 0
+let g:go_highlight_variable_declarations = 0
+let g:go_doc_keywordprg_enabled = 0
 
 
 
