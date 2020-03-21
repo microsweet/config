@@ -3,6 +3,8 @@ Description=Windows10 VM
 After=vmware-hostd.service vmware-networks.service vmware-usbarbitrator.service
 
 [Service]
+User=
+Group=
 Type=simple
 RemainAfterExit=True
 ExecStart=/usr/bin/vmrun start '/home/microsweet/HDD/vmware/Windows10/Windows 10 x64.vmx' nogui
