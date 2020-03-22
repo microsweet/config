@@ -2,7 +2,7 @@
 @import "1line"
 
 #window {
-    width: 320px;
+    width: 385px;
     font: "SF Pro Display 11";
 }
 

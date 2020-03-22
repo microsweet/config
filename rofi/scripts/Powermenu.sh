@@ -3,7 +3,7 @@
 
 # reboot/poweroff/sleep/exit i3/exit/
 #OPTIONS="\n\n\n\nⒺ"
-OPTIONS="􀀢\n􀀦\n􀀨\n􀁠"
+OPTIONS="􀀢\n􀀦\n􀀨\n􀀒\n􀁠"
 
 # source configuration or use default values
 if [ -f $HOME/.config/rofi-power/config ]; then
@@ -34,6 +34,9 @@ then
             ;;
         􀀨)
             $($USE_LOCKER) && "$LOCKER"; systemctl suspend
+            ;;
+        􀀒)
+            $($USE_LOCKER) && "$LOCKER"; systemctl hibernate
             ;;
         􀁠)
             i3-msg exit
