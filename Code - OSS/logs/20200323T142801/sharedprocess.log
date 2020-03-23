@@ -1,0 +1,15 @@
+[2020-03-23 14:28:05.275] [sharedprocess] [info] main {"machineId":"488a31ba660e25921ed6b3dbe07f301427dad20e2aa3ddbcd4962d6111524ba9","windowId":2}
+[2020-03-23 14:28:45.284] [sharedprocess] [info] Starting to clean up unused language packs.
+[2020-03-23 14:28:45.287] [sharedprocess] [info] Skipping directory 646d4b6a631ab5adff820467cfcf5bae.zh-cn. Language pack still in use.
+[2020-03-23 14:29:12.291] [sharedprocess] [info] Installing extension: ms-vscode.go
+[2020-03-23 14:29:12.993] [sharedprocess] [info] Downloaded extension: ms-vscode.go /tmp/7cdd4806-b2bd-4899-a02d-af3e0c81d66e
+[2020-03-23 14:29:14.444] [sharedprocess] [info] Installing extension: windmilleng.vscode-go-autotest
+[2020-03-23 14:29:21.407] [sharedprocess] [info] Downloaded extension: windmilleng.vscode-go-autotest /tmp/6e1f5ac4-28bc-4f78-a8e8-69cf2cc87619
+[2020-03-23 14:29:21.967] [sharedprocess] [info] Extracted extension to /home/microsweet/.vscode-oss/extensions/.ms-vscode.go-0.13.1: ms-vscode.go
+[2020-03-23 14:29:21.967] [sharedprocess] [info] Renamed to /home/microsweet/.vscode-oss/extensions/ms-vscode.go-0.13.1
+[2020-03-23 14:29:21.969] [sharedprocess] [info] Installation completed. ms-vscode.go
+[2020-03-23 14:29:21.984] [sharedprocess] [info] Extensions installed successfully: ms-vscode.go
+[2020-03-23 14:29:22.850] [sharedprocess] [info] Extracted extension to /home/microsweet/.vscode-oss/extensions/.windmilleng.vscode-go-autotest-1.6.0: windmilleng.vscode-go-autotest
+[2020-03-23 14:29:22.850] [sharedprocess] [info] Renamed to /home/microsweet/.vscode-oss/extensions/windmilleng.vscode-go-autotest-1.6.0
+[2020-03-23 14:29:22.850] [sharedprocess] [info] Installation completed. windmilleng.vscode-go-autotest
+[2020-03-23 14:29:22.861] [sharedprocess] [info] Extensions installed successfully: windmilleng.vscode-go-autotest

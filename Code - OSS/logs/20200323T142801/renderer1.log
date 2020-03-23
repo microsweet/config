@@ -1,0 +1,34 @@
+[2020-03-23 14:30:58.886] [renderer1] [error] timeout after 500 ms: Error: timeout after 500 ms
+    at t.RawDebugSession.handleErrorResponse (file:///usr/lib/code/out/vs/workbench/workbench.desktop.main.js:2892:728)
+    at file:///usr/lib/code/out/vs/workbench/workbench.desktop.main.js:2892:159
+    at async t.RawDebugSession.shutdown (file:///usr/lib/code/out/vs/workbench/workbench.desktop.main.js:2890:248)
+[2020-03-23 14:33:21.069] [renderer1] [error] timeout after 500 ms: Error: timeout after 500 ms
+    at t.RawDebugSession.handleErrorResponse (file:///usr/lib/code/out/vs/workbench/workbench.desktop.main.js:2892:728)
+    at file:///usr/lib/code/out/vs/workbench/workbench.desktop.main.js:2892:159
+    at async t.RawDebugSession.shutdown (file:///usr/lib/code/out/vs/workbench/workbench.desktop.main.js:2890:248)
+[2020-03-23 14:35:18.536] [renderer1] [error] timeout after 500 ms: Error: timeout after 500 ms
+    at t.RawDebugSession.handleErrorResponse (file:///usr/lib/code/out/vs/workbench/workbench.desktop.main.js:2892:728)
+    at file:///usr/lib/code/out/vs/workbench/workbench.desktop.main.js:2892:159
+    at async t.RawDebugSession.shutdown (file:///usr/lib/code/out/vs/workbench/workbench.desktop.main.js:2890:248)
+[2020-03-23 14:37:13.979] [renderer1] [error] timeout after 500 ms: Error: timeout after 500 ms
+    at t.RawDebugSession.handleErrorResponse (file:///usr/lib/code/out/vs/workbench/workbench.desktop.main.js:2892:728)
+    at file:///usr/lib/code/out/vs/workbench/workbench.desktop.main.js:2892:159
+    at async t.RawDebugSession.shutdown (file:///usr/lib/code/out/vs/workbench/workbench.desktop.main.js:2890:248)
+[2020-03-23 14:41:14.429] [renderer1] [error] timeout after 500 ms: Error: timeout after 500 ms
+    at t.RawDebugSession.handleErrorResponse (file:///usr/lib/code/out/vs/workbench/workbench.desktop.main.js:2892:728)
+    at file:///usr/lib/code/out/vs/workbench/workbench.desktop.main.js:2892:159
+    at async t.RawDebugSession.shutdown (file:///usr/lib/code/out/vs/workbench/workbench.desktop.main.js:2890:248)
+[2020-03-23 14:43:17.522] [renderer1] [error] timeout after 500 ms: Error: timeout after 500 ms
+    at t.RawDebugSession.handleErrorResponse (file:///usr/lib/code/out/vs/workbench/workbench.desktop.main.js:2892:728)
+    at file:///usr/lib/code/out/vs/workbench/workbench.desktop.main.js:2892:159
+    at async t.RawDebugSession.shutdown (file:///usr/lib/code/out/vs/workbench/workbench.desktop.main.js:2890:248)
+[2020-03-23 14:45:26.388] [renderer1] [error] timeout after 500 ms: Error: timeout after 500 ms
+    at t.RawDebugSession.handleErrorResponse (file:///usr/lib/code/out/vs/workbench/workbench.desktop.main.js:2892:728)
+    at file:///usr/lib/code/out/vs/workbench/workbench.desktop.main.js:2892:159
+    at async t.RawDebugSession.shutdown (file:///usr/lib/code/out/vs/workbench/workbench.desktop.main.js:2890:248)
+[2020-03-23 14:48:00.307] [renderer1] [error] timeout after 500 ms: Error: timeout after 500 ms
+    at t.RawDebugSession.handleErrorResponse (file:///usr/lib/code/out/vs/workbench/workbench.desktop.main.js:2892:728)
+    at file:///usr/lib/code/out/vs/workbench/workbench.desktop.main.js:2892:159
+    at async t.RawDebugSession.shutdown (file:///usr/lib/code/out/vs/workbench/workbench.desktop.main.js:2890:248)
+[2020-03-23 14:53:27.628] [renderer1] [error] 出现未知错误。有关详细信息，请参阅日志。
+[2020-03-23 14:53:28.951] [renderer1] [error] 出现未知错误。有关详细信息，请参阅日志。

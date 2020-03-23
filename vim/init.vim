@@ -91,7 +91,7 @@ Plug 'scrooloose/nerdcommenter'
 Plug 'tmhedberg/SimpylFold'
 
 " Debugger
-" Plug 'puremourning/vimspector', {'do': './install_gadget.py --enable-python'}
+Plug 'puremourning/vimspector', {'do': './install_gadget.py --enable-go --enable-python'}
 
 " vim-go
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
@@ -421,6 +421,13 @@ command! -bang BTags
   \                     head -n 16"'
   \ })
 
+" ##############################
+" #
+" # vimspector
+" #
+" ##############################
+
+let g:vimspector_enable_mappings = 'HUMAN'
 
 " ##############################
 " #
