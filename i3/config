@@ -104,6 +104,7 @@ assign [class="Google-chrome"] $ws2
 assign [class="Eclipse"] $ws3
 assign [class="remmina"] $ws9
 assign [class="Vmware"] $ws6
+assign [class="Steam"] $ws6
 
 # Autostart applications
 exec_always --no-startup-id  ~/.config/polybar/launchi3.sh
