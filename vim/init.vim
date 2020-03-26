@@ -95,6 +95,10 @@ Plug 'puremourning/vimspector', {'do': './install_gadget.py --enable-go --enable
 
 " vim-go
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+" 检索
+Plug 'easymotion/vim-easymotion'
+" 多重选取
+Plug 'mg979/vim-visual-multi'
 call plug#end()
 
 
@@ -441,4 +445,13 @@ augroup color
 	autocmd BufRead,BufNewFile * colorscheme gruvbox
 	autocmd BufRead,BufNewFile * hi Pmenu ctermbg=DarkGrey
 augroup END
+
+" ##############################
+" #
+" # vim-easymotion
+" #
+" ##############################
+
+map  <Leader>f <Plug>(easymotion-bd-f)
+nmap <Leader>f <Plug>(easymotion-overwin-f)
 
