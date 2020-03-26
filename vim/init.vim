@@ -466,3 +466,6 @@ nmap <Leader>f <Plug>(easymotion-overwin-f)
 " ##############################
 
 let g:airline_theme = 'angr'
+
+" 设置背景透明
+hi Normal ctermfg=252 ctermbg=none
