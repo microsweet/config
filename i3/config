@@ -95,7 +95,7 @@ bindsym $mod+Return exec alacritty
 #bindsym $mod+d exec "emacsclient -c"
 
 # Start applications on specific workspaces
-assign [class="code"] $ws1
+#assign [class="code"] $ws1
 #assign [class="Termite"] $ws3
 assign [class="Nemo"] $ws4
 assign [class="Gimp"] $ws6
