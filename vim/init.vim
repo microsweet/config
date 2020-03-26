@@ -99,6 +99,10 @@ Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'easymotion/vim-easymotion'
 " 多重选取
 Plug 'mg979/vim-visual-multi'
+Plug 'mhinz/vim-startify'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'dracula/vim', { 'as': 'dracula' }
 call plug#end()
 
 
@@ -439,10 +443,10 @@ let g:vimspector_enable_mappings = 'HUMAN'
 " #
 " ##############################
 
-colorscheme gruvbox
+colorscheme dracula
 augroup color
 	autocmd!
-	autocmd BufRead,BufNewFile * colorscheme gruvbox
+	autocmd BufRead,BufNewFile * colorscheme dracula
 	autocmd BufRead,BufNewFile * hi Pmenu ctermbg=DarkGrey
 augroup END
 
@@ -455,3 +459,10 @@ augroup END
 map  <Leader>f <Plug>(easymotion-bd-f)
 nmap <Leader>f <Plug>(easymotion-overwin-f)
 
+" ##############################
+" #
+" # vim-airline-themes
+" #
+" ##############################
+
+let g:airline_theme = 'angr'
