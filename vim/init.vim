@@ -45,6 +45,16 @@ noremap < <<
 noremap res :res 
 noremap vres :vertical res 
 
+" ##############################
+" #
+" # coc-translator
+" #
+" ##############################
+
+" popup
+nmap <Leader>t <Plug>(coc-translator-p)
+vmap <Leader>t <Plug>(coc-translator-pv)
+
 "inoremap { {}<ESC>i<CR><ESC>O
 inoremap { {}<ESC>i
 
