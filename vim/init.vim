@@ -220,7 +220,7 @@ let NERDTreeAutoCenter=1
 " 设置宽度
 "let NERDTreeWinSize=31
 " 在终端启动vim时，共享NERDTree
-let g:nerdtree_tabs_open_on_console_startup=1
+let g:nerdtree_tabs_open_on_console_startup=0
 " 忽略一下文件的显示
 let NERDTreeIgnore=['\.pyc','\~$','\.swp']
 " 显示书签列表
