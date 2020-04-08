@@ -456,7 +456,7 @@ let g:vimspector_enable_mappings = 'HUMAN'
 colorscheme dracula
 augroup color
 	autocmd!
-	autocmd BufRead,BufNewFile * colorscheme dracula
+	"autocmd BufRead,BufNewFile * colorscheme dracula
 	" 设置背景透明
 	autocmd BufRead,BufNewFile * hi Normal ctermfg=252 ctermbg=none
 	autocmd BufRead,BufNewFile * hi Pmenu ctermbg=DarkGrey
