@@ -117,6 +117,7 @@ exec_always --no-startup-id "~/.config/polybar/launch.sh"
 exec_always --no-startup-id blueman-applet
 exec --no-startup-id nm-applet
 exec --no-startup-id redshift
+exec_always --no-startup-id "mpd ~/.config/mpd/mpd.conf"
 
 # Specific applications configration
 for_window [class=".*anbox.*"] floating enable

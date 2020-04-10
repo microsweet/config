@@ -14,6 +14,11 @@
 !/i3/
 !/local-config
 !/local-config.ini
+!/mpd/
+/mpd/log
+/mpd/mpd.db
+/mpd/mpd.pid
+/mpd/mpdstate
 !/neofetch/
 !/picom/
 !/polybar/
