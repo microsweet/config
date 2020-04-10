@@ -43,6 +43,7 @@ font-4 = ${local.font-4}
 font-5 = ${local.font-5}
 font-6 = ${local.font-6}
 font-7 = ${local.font-7}
+font-8 = ${local.font-8}
 
 fixed-center = true
 spacing = 0
@@ -52,7 +53,7 @@ module-margin-left = 0
 module-margin-right = 0 
 
 modules-left = i3 title right 
-modules-center =  left date right
+modules-center =  left mpd date right
 modules-right = ${local.modules-right}
 overline-size = 6
 overline-color=${colors.xbs}
