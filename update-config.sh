@@ -5,6 +5,7 @@ cp -r ./dunst/ $HOME/.config
 cp -r ./picom/ $HOME/.config
 cp -r ./polybar/ $HOME/.config
 cp -r ./alacritty/ $HOME/.config
+cp -r ./mpd/ $HOME/.config
 
 cp $HOME/.config/local-config.ini $HOME/.config/polybar/
 
@@ -29,6 +30,7 @@ cp -r ./winfont/ $HOME/.config
 cp -r ./Scripts/ $HOME/.Scripts
 
 cp ../config/zshrc $HOME/.zshrc
+cp ../config/p10k.zsh $HOME/.p10k.zsh
 cp ../config/xprofile $HOME/.xprofile
 echo copy complete
 
