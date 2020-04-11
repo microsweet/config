@@ -6,6 +6,9 @@ cp -r ./picom/ $HOME/.config
 cp -r ./polybar/ $HOME/.config
 cp -r ./alacritty/ $HOME/.config
 cp -r ./mpd/ $HOME/.config
+if [ ! -d "/$HOME/.config/mpd/playlists" ]; then
+	mkdir $HOME/.config/mpd/playlists
+fi
 
 cp $HOME/.config/local-config.ini $HOME/.config/polybar/
 
