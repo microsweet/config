@@ -38,7 +38,7 @@ cp ../config/xprofile $HOME/.xprofile
 echo copy complete
 
 echo set local config
-cat $HOME/.config/local-config >> /home/microsweet/.config/i3/config 
+cat $HOME/.config/local-config >> $HOME/.config/i3/config 
 
 #sed -i '/\[bar\/i3mainbar\]/a\monitor\ \=\ \$\{env\:MONITOR\:eDP\}' ~/.config/polybar/config
 
