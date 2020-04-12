@@ -28,7 +28,7 @@ cp -r ./neofetch/ $HOME/.config
 cp -r ./fontconfig/ $HOME/.config
 cp -r ./zsh/ $HOME/.config
 #win字体文件，自行创建符号链接到/usr/share/fonts/
-cp -r ./winfont/ $HOME/.config
+#cp -r ./winfont/ $HOME/.config
 
 cp -r ./Scripts/ $HOME/.Scripts
 
