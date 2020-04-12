@@ -44,6 +44,7 @@ noremap > >>
 noremap < <<
 noremap res :res 
 noremap vres :vertical res 
+noremap <leader>v $v0
 
 " ##############################
 " #
