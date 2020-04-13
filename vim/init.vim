@@ -21,7 +21,7 @@ set wildmenu
 set scrolloff=10
 
 " edit <++>
-map <LEADER><LEADER> <ESC>/<++><CR>:nohlsearch<CR>d4li
+map <LEADER><LEADER>a <ESC>/<++><CR>:nohlsearch<CR>d4li
 
 noremap S :w<CR>
 noremap ; :
