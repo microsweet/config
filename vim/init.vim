@@ -13,7 +13,8 @@ set encoding=utf-8
 "set softtabstop=2
 set backspace=indent,eol,start
 set number
-set norelativenumber
+"set norelativenumber
+set relativenumber
 set cursorline
 set wrap
 set showcmd
