@@ -150,7 +150,7 @@ for_window [class="Pavucontrol"] floating enable resize set 800 600
 for_window [class="Nm-connection-editor"] floating enable resize set 800 600
 for_window [class="Kvantum Manager"] floating enable resize set 800 600
 for_window [class="GParted"] floating enable resize set 800 600
-for_window [class="st-256color"] border normal
+#for_window [class="st-256color"] border normal
 
 #设置悬浮窗口
 bindsym $mod+x move scratchpad
