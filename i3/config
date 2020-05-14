@@ -90,8 +90,8 @@ bindsym $mod+Shift+i exec ~/.config/polybar/scripts/systray-toggle.sh
 #
 ##########################
 # Start applications
-#bindsym $mod+Return exec st
-bindsym $mod+Return exec alacritty
+bindsym $mod+Return exec st
+bindsym $mod+Ctrl+Return exec alacritty
 #bindsym $mod+d exec "emacsclient -c"
 
 # Start applications on specific workspaces
@@ -150,7 +150,7 @@ for_window [class="Pavucontrol"] floating enable resize set 800 600
 for_window [class="Nm-connection-editor"] floating enable resize set 800 600
 for_window [class="Kvantum Manager"] floating enable resize set 800 600
 for_window [class="GParted"] floating enable resize set 800 600
-for_window [class="st-256color"] border normal
+for_window [class="st-256color"] floating normal
 
 #设置悬浮窗口
 bindsym $mod+x move scratchpad
