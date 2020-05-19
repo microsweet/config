@@ -1,0 +1,11 @@
+[Unit]
+Description=Fan PWM
+;After=systemd-user-sessions.service
+
+[Service]
+Type=simple
+RemainAfterExit=True
+ExecStart=/home/ms/fan.py
+
+;[Install]
+;WantedBy=graphical.target
