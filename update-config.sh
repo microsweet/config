@@ -33,7 +33,7 @@ cp -r ./zsh/ $HOME/.config
 cp -r ./Scripts/ $HOME/.Scripts
 
 cp ../config/zshrc $HOME/.zshrc
-cp ../config/p10k.zsh $HOME/.p10k.zsh
+#cp ../config/p10k.zsh $HOME/.p10k.zsh
 cp ../config/xprofile $HOME/.xprofile
 echo copy complete
 
