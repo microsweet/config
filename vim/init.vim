@@ -103,7 +103,7 @@ Plug 'scrooloose/nerdcommenter'
 Plug 'tmhedberg/SimpylFold'
 
 " Debugger
-Plug 'puremourning/vimspector', {'do': './install_gadget.py --enable-go --enable-python'}
+"Plug 'puremourning/vimspector', {'do': './install_gadget.py --enable-go --enable-python'}
 
 " vim-go
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
