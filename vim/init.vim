@@ -83,6 +83,7 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }
 Plug 'dhruvasagar/vim-table-mode', { 'on': 'TableModeToggle' }
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+" fzf need install the_silver_searcher
 Plug 'junegunn/fzf.vim'
 Plug 'Yggdroot/indentLine'
 " snips
