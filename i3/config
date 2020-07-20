@@ -301,7 +301,7 @@ bindsym $mod+3 workspace $ws3
 bindsym $mod+4 workspace $ws4
 bindsym $mod+5 workspace $ws5
 bindsym $mod+6 workspace $ws6
-bindsym $mod+7 workspace $ws7 
+bindsym $mod+7 workspace $ws7
 bindsym $mod+8 workspace $ws8
 bindsym $mod+0 workspace $ws9
 
@@ -434,7 +434,7 @@ mode "$mode_gaps_inner" {
 #    start app
 #
 #########################
-bindsym $mod+F2 exec google-chrome-stable
+bindsym $mod+c exec google-chrome-stable
 bindsym $mod+F3 exec thunar
 
 ##########################
