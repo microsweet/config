@@ -53,7 +53,8 @@
 
 
 [shortcuts]
-    close = ctrl+space
+    #close = ctrl+space
+    close_all = ctrl+space
     history = ctrl+shift+space
     context = ctrl+shift+period
 
