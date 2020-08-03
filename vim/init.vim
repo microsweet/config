@@ -48,6 +48,9 @@ noremap vres :vertical res
 noremap <leader>v $v0
 noremap Q :q!<cr>
 
+"opening a terminal window
+noremap <LEADER>/ :set splitbelow<CR>:split<CR>:term<CR>
+
 " ##############################
 " #
 " # coc-translator
