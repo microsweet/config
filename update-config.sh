@@ -39,6 +39,8 @@ echo copy complete
 
 echo set local config
 cat $HOME/.config/local-config >> $HOME/.config/i3/config 
+cat $HOME/.config/local-polybar-modules-extend >> $HOME/.config/polybar/modules.ini
+cat $HOME/.config/local-polybar-config-extend >> $HOME/.config/polybar/config
 
 #sed -i '/\[bar\/i3mainbar\]/a\monitor\ \=\ \$\{env\:MONITOR\:eDP\}' ~/.config/polybar/config
 
