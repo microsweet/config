@@ -19,6 +19,7 @@
 !/local-config
 !/local-config.ini
 !/mpd/
+!/mpv/
 /mpd/log
 /mpd/mpd.db
 /mpd/mpd.pid

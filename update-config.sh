@@ -9,6 +9,7 @@ cp -r ./mpd/ $HOME/.config
 if [ ! -d "/$HOME/.config/mpd/playlists" ]; then
 	mkdir $HOME/.config/mpd/playlists
 fi
+cp -r ./mpv/ $HOME/.config
 
 cp $HOME/.config/local-config.ini $HOME/.config/polybar/
 
