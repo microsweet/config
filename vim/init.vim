@@ -26,8 +26,8 @@ map <LEADER><LEADER>a <ESC>/<++><CR>:nohlsearch<CR>d4li
 
 noremap S :w<CR>
 noremap ; :
-noremap sv :set splitright<CR>:vsplit<CR>
-noremap sou :source $MYVIMRC<CR>
+noremap <leader>sv :set splitright<CR>:vsplit<CR>
+noremap <leader>sou :source $MYVIMRC<CR>
 noremap tb :tabe<CR>
 noremap th :-tabnext<CR>
 noremap tl :+tabnext<CR>
