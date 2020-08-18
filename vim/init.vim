@@ -26,8 +26,8 @@ map <LEADER><LEADER>a <ESC>/<++><CR>:nohlsearch<CR>d4li
 
 noremap S :w<CR>
 noremap ; :
-noremap sv :set splitright<CR>:vsplit<CR>
-noremap sou :source $MYVIMRC<CR>
+noremap <leader>sv :set splitright<CR>:vsplit<CR>
+noremap <leader>sou :source $MYVIMRC<CR>
 noremap tb :tabe<CR>
 noremap th :-tabnext<CR>
 noremap tl :+tabnext<CR>
@@ -46,6 +46,10 @@ noremap < <<
 noremap res :res 
 noremap vres :vertical res 
 noremap <leader>v $v0
+noremap Q :q!<cr>
+
+"opening a terminal window
+noremap <LEADER>/ :set splitbelow<CR>:split<CR>:term<CR>
 
 " ##############################
 " #
@@ -83,6 +87,7 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }
 Plug 'dhruvasagar/vim-table-mode', { 'on': 'TableModeToggle' }
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+" fzf need install the_silver_searcher
 Plug 'junegunn/fzf.vim'
 Plug 'Yggdroot/indentLine'
 " snips
@@ -334,17 +339,17 @@ endfunc
 
 let g:input_toggle = 1
 function! Fcitx2en()
-   let s:input_status = system("fcitx-remote")
+   let s:input_status = system("fcitx5-remote")
    if s:input_status == 2
       let g:input_toggle = 1
-      let l:a = system("fcitx-remote -c")
+      let l:a = system("fcitx5-remote -c")
    endif
 endfunction
 
 function! Fcitx2zh()
-   let s:input_status = system("fcitx-remote")
+   let s:input_status = system("fcitx5-remote")
    if s:input_status != 2 && g:input_toggle == 1
-      let l:a = system("fcitx-remote -o")
+      let l:a = system("fcitx5-remote -o")
       let g:input_toggle = 0
    endif
 endfunction

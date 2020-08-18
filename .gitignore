@@ -8,6 +8,7 @@
 !/archlinuxcn
 !/blurlock
 !Code - OSS/
+!crontab
 !/dunst/
 !/dwmbar/
 !/fan.py
@@ -18,6 +19,7 @@
 !/local-config
 !/local-config.ini
 !/mpd/
+!/mpv/
 /mpd/log
 /mpd/mpd.db
 /mpd/mpd.pid

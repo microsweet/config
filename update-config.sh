@@ -10,6 +10,7 @@ cp -r ./mpd/ $HOME/.config
 if [ ! -d "/$HOME/.config/mpd/playlists" ]; then
 	mkdir $HOME/.config/mpd/playlists
 fi
+cp -r ./mpv/ $HOME/.config
 
 cp $HOME/.config/local-config.ini $HOME/.config/polybar/
 
@@ -40,6 +41,8 @@ echo copy complete
 
 echo set local config
 cat $HOME/.config/local-config >> $HOME/.config/i3/config 
+cat $HOME/.config/local-polybar-modules-extend >> $HOME/.config/polybar/modules.ini
+cat $HOME/.config/local-polybar-config-extend >> $HOME/.config/polybar/config
 
 #sed -i '/\[bar\/i3mainbar\]/a\monitor\ \=\ \$\{env\:MONITOR\:eDP\}' ~/.config/polybar/config
 
