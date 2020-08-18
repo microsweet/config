@@ -1,4 +1,5 @@
 echo copy config from git resposity to .config
+cp -r ./dwmbar/ $HOME/.config
 cp -r ./i3/ $HOME/.config
 cp -r ./rofi/ $HOME/.config
 cp -r ./dunst/ $HOME/.config
