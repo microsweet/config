@@ -1,0 +1,247 @@
+<?xml version='1.0'?>
+<!DOCTYPE fontconfig SYSTEM 'fonts.dtd'>
+<fontconfig>
+
+<!-- =============== 字体目录设置 =============== -->
+
+    <!-- 自定义的字体目录 -->
+		<!--<dir>~/.config/Manual/DejaVuSansMono</dir>-->
+		<!--<dir>~/.config/Manual/Win7-Fonts</dir>-->
+
+
+<!-- =============== 字体匹配设置 =============== -->
+
+    <!-- Default font -->
+
+    <!-- sans-serif -->
+    <match target="pattern">
+        <test qual="any" name="family">
+            <string>sans-serif </string>
+        </test>
+        <edit name="family" mode="prepend" binding="same">
+            <string>DejaVu Sans</string>
+        </edit>
+    </match>
+    <!-- serif -->
+    <match target="pattern">
+        <test qual="any" name="family">
+            <string>serif</string>
+        </test>
+        <edit name="family" mode="prepend" binding="same">
+            <string>DejaVu Serif</string>
+        </edit>
+    </match>
+    <!-- monospace -->
+    <match target="pattern">
+        <test qual="any" name="family">
+            <string>monospace</string>
+        </test>
+        <edit name="family" mode="prepend" binding="same">
+            <string>DejaVu Sans Mono</string>
+        </edit>
+    </match>
+
+    <!-- Default font for the zh_cn locale -->
+
+    <!-- sans-serif -->
+    <match>
+        <test name="lang" compare="contains">
+            <string>zh_cn</string>
+        </test>
+        <test name="family">
+            <string>sans-serif</string>
+        </test>
+        <edit name="family" mode="prepend">
+            <string>WenQuanYi Zen Hei</string>
+        </edit>
+    </match>
+    <!-- serif -->
+    <match>
+        <test name="lang" compare="contains">
+            <string>zh_cn</string>
+        </test>
+        <test name="family">
+            <string>serif</string>
+        </test>
+        <edit name="family" mode="prepend">
+            <string>WenQuanYi Zen Hei</string>
+        </edit>
+    </match>
+    <!-- monospace -->
+    <match>
+        <test name="lang" compare="contains">
+            <string>zh_cn</string>
+        </test>
+        <test name="family">
+            <string>monospace</string>
+        </test>
+        <edit name="family" mode="prepend">
+            <string>WenQuanYi Zen Hei Mono</string>
+        </edit>
+    </match>
+
+    <!-- Default font for the zh_tw locale -->
+
+    <!-- sans-serif -->
+    <match>
+        <test name="lang" compare="contains">
+            <string>zh_tw</string>
+        </test>
+        <test name="family">
+            <string>sans-serif</string>
+        </test>
+        <edit name="family" mode="prepend">
+            <family>Noto Sans CJK TC</family>
+        </edit>
+    </match>
+    <!-- serif -->
+    <match>
+        <test name="lang" compare="contains">
+            <string>zh_tw</string>
+        </test>
+        <test name="family">
+            <string>serif</string>
+        </test>
+        <edit name="family" mode="prepend">
+            <family>Noto Serif CJK TC</family>
+        </edit>
+    </match>
+    <!-- monospace -->
+    <match>
+        <test name="lang" compare="contains">
+            <string>zh_tw</string>
+        </test>
+        <test name="family">
+            <string>monospace</string>
+        </test>
+        <edit name="family" mode="prepend">
+            <family>Noto Sans Mono CJK TC</family>
+        </edit>
+    </match>
+
+    <!-- Fallback fonts preference order -->
+
+    <!-- sans-serif -->
+    <alias>
+        <family>sans-serif</family>
+        <prefer>
+            <family>DejaVu Sans</family>
+            <family>Noto Sans</family>
+
+            <family>WenQuanYi Zen Hei</family>
+            <family>Noto Sans CJK SC</family>
+            <family>Noto Sans CJK TC</family>
+            <family>Noto Sans CJK JP</family>
+            <family>Noto Sans CJK KR</family>
+
+            <family>Noto Color Emoji</family>
+            <family>Noto Emoji</family>
+	    <family>Font Awesome 5 Free</family>
+        </prefer>
+    </alias>
+    <!-- serif -->
+    <alias>
+        <family>serif</family>
+        <prefer>
+            <family>DejaVu Serif</family>
+            <family>Noto Serif</family>
+
+            <family>WenQuanYi Zen Hei</family>
+            <family>Noto Serif CJK SC</family>
+            <family>Noto Serif CJK TC</family>
+            <family>Noto Serif CJK JP</family>
+            <family>Noto Serif CJK KR</family>
+
+            <family>Noto Color Emoji</family>
+            <family>Noto Emoji</family>
+	    <family>Font Awesome 5 Free</family>
+        </prefer>
+    </alias>
+    <!-- monospace -->
+    <alias>
+        <family>monospace</family>
+        <prefer>
+            <family>DejaVuSansMono Nerd Font Mono</family>
+            <family>DejaVu Sans Mono</family>
+            <family>Noto Sans Mono</family>
+            <family>Source Code Pro</family>
+
+            <family>WenQuanYi Zen Hei Mono</family>
+            <family>Noto Sans Mono CJK SC</family>
+            <family>Noto Sans Mono CJK TC</family>
+            <family>Noto Sans Mono CJK JP</family>
+            <family>Noto Sans Mono CJK KR</family>
+
+            <family>Noto Color Emoji</family>
+            <family>Noto Emoji</family>
+	    <family>Font Awesome 5 Free</family>
+        </prefer>
+    </alias>
+    <!-- sans-serif -->
+    <alias>
+        <family>Fira Code</family>
+        <prefer>
+            <family>DejaVu Sans</family>
+            <family>Noto Sans</family>
+
+            <family>WenQuanYi Zen Hei</family>
+            <family>Noto Sans CJK SC</family>
+            <family>Noto Sans CJK TC</family>
+            <family>Noto Sans CJK JP</family>
+            <family>Noto Sans CJK KR</family>
+
+            <family>Noto Color Emoji</family>
+            <family>Noto Emoji</family>
+	    <family>Font Awesome 5 Free</family>
+        </prefer>
+    </alias>
+
+
+<!-- =============== 渲染设置 =============== -->
+
+    <match target="font">
+        <!-- 抗锯齿 -->
+        <edit name="antialias" mode="assign">
+            <bool>true</bool>
+        </edit>
+
+        <!-- 字体提示 -->
+
+        <!-- BCI (字节码解释器) -->
+        <edit name="hinting" mode="assign">
+            <bool>true</bool>
+        </edit>
+
+        <!-- Custom settings for certain fonts or font styles -->
+        <test name="weight" compare="more">
+            <const>medium</const>
+        </test>
+        <!-- 自动微调 -->
+        <edit name="autohint" mode="assign">
+            <bool>false</bool>
+        </edit>
+
+        <!-- Hintstyle -->
+        <edit name="hintstyle" mode="assign">
+            <const>hintfull</const>
+        </edit>
+
+        <!-- 像素对齐 -->
+        <edit name="rgba" mode="assign">
+            <const>rgb</const>
+        </edit>
+
+        <!-- 子像素渲染 -->
+
+        <!-- LCD 滤镜 -->
+        <edit name="lcdfilter" mode="assign">
+            <const>lcddefault</const>
+        </edit>
+
+        <!-- 禁用 bitmap 字体 -->
+        <edit name="embeddedbitmap" mode="assign">
+            <bool>false</bool>
+        </edit>
+    </match>
+
+</fontconfig>
