@@ -20,6 +20,7 @@ set wrap
 set showcmd
 set wildmenu
 set scrolloff=10
+set ic
 
 " edit <++>
 map <LEADER><LEADER>a <ESC>/<++><CR>:nohlsearch<CR>d4li
