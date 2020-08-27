@@ -21,6 +21,7 @@ set showcmd
 set wildmenu
 set scrolloff=10
 set ic
+set concealcursor=v
 
 " edit <++>
 map <LEADER><LEADER>a <ESC>/<++><CR>:nohlsearch<CR>d4li
@@ -168,6 +169,7 @@ source $HOME/.config/nvim/_machine_specific.vim
 " #
 " ##############################
 
+set hidden
 let g:coc_global_extensions = ['coc-python', 'coc-vimlsp', 'coc-emmet', 'coc-html', 'coc-json', 'coc-css', 'coc-tsserver', 'coc-yank', 'coc-gitignore', 'coc-omnisharp', 'coc-translator']
 function! s:check_back_space() abort
 	let col = col('.') - 1
@@ -180,6 +182,15 @@ inoremap <silent><expr> <Tab>
 inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<CR>"
 nnoremap fmt :call CocAction('format')<CR>
+set updatetime=300
+set shortmess+=c
+nmap <silent> <LEADER>[ <Plug>(coc-diagnostic-prev)
+nmap <silent> <LEADER>] <Plug>(coc-diagnostic-next)
+autocmd CursorHold * silent call CocActionAsync('highlight')
+nmap <silent> <LEADER>d <Plug>(coc-definition)
+nmap <silent> <LEADER>y <Plug>(coc-type-definition)
+nmap <silent> <LEADER>i <Plug>(coc-implementation)
+nmap <silent> <LEADER>r <Plug>(coc-references)
 " Using CocList
 " Show all diagnostics
 "nnoremap <silent> <space>a  :<C-u>CocList diagnostics<cr>
