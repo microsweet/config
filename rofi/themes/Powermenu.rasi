@@ -1,14 +1,15 @@
-@import "colors"
 @import "1line"
 
 #window {
-    width: 385px;
-    font: "SF Pro Display 11";
+    background-color:      #ffffff96;
+    border-radius: 4px;
+    width: 366px;
+    font: "SF Pro Display 10";
 }
 
 #element {
     background-color:      #00000000;
     border-radius: 4px;
     padding:    10px 10px 10px 10px;
-    spacing: 30;
+    spacing: 0;
 }
