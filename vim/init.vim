@@ -256,7 +256,7 @@ let g:nerdtree_tabs_autofind=0
 " #
 " ##############################
 
-let g:NERDTreeIndicatorMapCustom = {
+let g:NERDTreeGitStatusIndicatorMapCustom = {
 			\ "Modified"  : "✹",
 			\ "Staged"    : "✚",
 		    	\ "Untracked" : "✭",
