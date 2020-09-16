@@ -140,6 +140,8 @@ let g:indentLine_color_gui = '#333333'
 silent! unmap <LEADER>ig
 autocmd WinEnter * silent! unmap <LEADER>ig
 let g:indentLine_fileTypeExclude = ['tex']
+let g:indentLine_concealcursor = 'v'
+let g:indentLine_conceallevel = 2
 
 "markdown
 source ~/.config/nvim/inoremap.vim
