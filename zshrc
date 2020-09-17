@@ -78,12 +78,15 @@ POWERLEVEL9K_MODE="awesome-patched"
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
 
+zle -N history-substring-search-up
+zle -N history-substring-search-down
+
 # Which plugins would you like to load?
 # Standard plugins can be found in ~/.oh-my-zsh/plugins/*
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git vi-mode z)
+plugins=(git vi-mode z zsh-autosuggestions zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -116,13 +119,10 @@ source $ZSH/oh-my-zsh.sh
 #set open neofetch
 #neofetch
 
-zle -N history-substring-search-up
-zle -N history-substring-search-down
-
-source ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+#source ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 #source /home/microsweet/.oh-my-zsh/custom/plugins/incr/incr*.zsh
 #source /home/microsweet/.oh-my-zsh/custom/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
-source ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+#source ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 #source ~/.oh-my-zsh/custom/plugins/vi-mode/vi-mode.plugin.zsh
 
 export NLS_LANG="AMERICAN_AMERICA".ZHS16GBK
