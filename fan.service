@@ -5,7 +5,7 @@ Description=Fan PWM
 [Service]
 Type=simple
 RemainAfterExit=True
-ExecStart=/home/ms/fan.py
+ExecStart=/home/microsweet/fan.py true
 
-;[Install]
-;WantedBy=graphical.target
+[Install]
+WantedBy=graphical.target
