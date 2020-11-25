@@ -124,6 +124,8 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'dracula/vim', { 'as': 'dracula' }
 " 求和插件（列求和：<leader><leader>?s）
 Plug 'sk1418/HowMuch'
+
+Plug 'gcmt/wildfire.vim'
 call plug#end()
 
 
