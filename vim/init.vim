@@ -7,10 +7,10 @@ filetype plugin on
 filetype plugin indent on
 set mouse=a
 set encoding=utf-8
-"set expandtab
-"set tabstop=2
-"set shiftwidth=2
-"set softtabstop=2
+set expandtab
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
 set backspace=indent,eol,start
 set number
 "set norelativenumber
