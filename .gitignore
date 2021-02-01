@@ -24,6 +24,7 @@
 /mpd/mpd.db
 /mpd/mpd.pid
 /mpd/mpdstate
+!/myQmk
 !/neofetch/
 !/picom/
 !/polybar/
