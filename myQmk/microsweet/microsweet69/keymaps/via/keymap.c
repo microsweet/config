@@ -23,6 +23,21 @@ enum custom_keycodes {
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
+  /*
+   * Default Layer 
+   * ┌───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┐
+   * │Esc│1  │2  │3  │4  │5  │6  │7  │8  │9  │0  │-  │=  │\  │`  │Del│
+   * ├───┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴───┼───┤
+   * │Tab  │Q  │W  │E  │R  │T  │Y  │U  │I  │O  │P  │[  │]  │Bspc │P U│
+   * ├─────┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴─────┼───┤
+   * │Ctrl L│A  │S  │D  │F  │G  │H  │J  │K  │L  │;  │'  │Return  │P D│
+   * ├──────┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴────┬───┼───┤
+   * │Shift   │Z  │X  │C  │V  │B  │N  │M  │,  │.  │/  │Shift │Fn │End│
+   * ├────┬───┴┬──┴─┬─┴───┴───┴───┴───┴───┴──┬┴──┬┴──┬┴──┬───┼───┼───┤
+   * │Caps│Alt │Cmd │          Space         │Alt│Ctr│←  │↓  │↑  │→  │
+   * └────┴────┴────┴────────────────────────┴───┴───┴───┴───┴───┴───┘ 
+   */
+
 	KEYMAP(
 		KC_ESC, KC_1, KC_2, KC_3, KC_4, KC_5, KC_6, KC_7, KC_8, KC_9, KC_0, KC_MINS, KC_EQL, KC_BSLS, KC_GRV, KC_DEL, 
 		KC_TAB, KC_Q, KC_W, KC_E, KC_R, KC_T, KC_Y, KC_U, KC_I, KC_O, KC_P, KC_LBRC, KC_RBRC, KC_BSPC, KC_PGUP, 
@@ -141,19 +156,19 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
     switch (keycode) {
     case MC_Q:
         if (record->event.pressed) {
-	    SEND_STRING(""SS_DELAY(500)SS_TAP(X_ENT));
+	    SEND_STRING("ywd1991110wywd"SS_DELAY(500)SS_TAP(X_ENT));
         }
         break;
 
     case MC_W:
         if (record->event.pressed) {
-	    SEND_STRING(""SS_DELAY(500)SS_TAP(X_ENT));
+	    SEND_STRING("ywd110wywd1991"SS_DELAY(500)SS_TAP(X_ENT));
         }
         break;
 
     case MC_E:
         if (record->event.pressed) {
-	    SEND_STRING(""SS_TAP(X_ENT)SS_DELAY(500)""SS_TAP(X_ENT));
+	    SEND_STRING("microsweet"SS_TAP(X_ENT)SS_DELAY(500)"gg"SS_TAP(X_ENT));
         }
         break;
     }
