@@ -1,5 +1,5 @@
 {
-    "name": "Microsweet69",
+    "name": "MicrosweetKB69",
     "vendorId": "0xFEED",
     "productId": "0x6060",
     "lighting": "none",
@@ -10,7 +10,7 @@
     "layouts": {
         "keymap": [
             {
-                "name": "Microsweet68",
+                "name": "MicrosweetKB69",
                 "author": "Microsweet"
             },
             [

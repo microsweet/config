@@ -156,19 +156,19 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
     switch (keycode) {
     case MC_Q:
         if (record->event.pressed) {
-	    SEND_STRING("ywd1991110wywd"SS_DELAY(500)SS_TAP(X_ENT));
+	    SEND_STRING(""SS_DELAY(500)SS_TAP(X_ENT));
         }
         break;
 
     case MC_W:
         if (record->event.pressed) {
-	    SEND_STRING("ywd110wywd1991"SS_DELAY(500)SS_TAP(X_ENT));
+	    SEND_STRING(""SS_DELAY(500)SS_TAP(X_ENT));
         }
         break;
 
     case MC_E:
         if (record->event.pressed) {
-	    SEND_STRING("microsweet"SS_TAP(X_ENT)SS_DELAY(500)"gg"SS_TAP(X_ENT));
+	    SEND_STRING(""SS_TAP(X_ENT)SS_DELAY(500)""SS_TAP(X_ENT));
         }
         break;
     }
