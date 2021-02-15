@@ -3,6 +3,7 @@
 /*/
 
 #except
+!99-personal-kbd.hwdb
 !/.gitignore
 !/alacritty/
 !/archlinuxcn

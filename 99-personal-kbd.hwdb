@@ -1,0 +1,8 @@
+# 执行evtest查看键码，安装需要修改，修改后sudo执行 systemd-hwdb update,  udevadm trigger
+# 配置文件修改键码行首要有一个空格
+evdev:atkbd:dmi:bvn*:bvr*:bd*:svn*:pn*:pvr*
+ KEYBOARD_KEY_3a=leftctrl
+ KEYBOARD_KEY_1d=capslock
+ KEYBOARD_KEY_01=grave
+ KEYBOARD_KEY_29=esc
+
