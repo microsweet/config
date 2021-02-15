@@ -24,6 +24,7 @@
 /mpd/mpd.db
 /mpd/mpd.pid
 /mpd/mpdstate
+!/myQmk
 !/neofetch/
 !/picom/
 !/polybar/
@@ -34,6 +35,7 @@
 !/rofi/
 !/Scripts/
 !/settings.xml
+!/ssh/
 !/termite/
 !/update-config.sh
 !/vim/
