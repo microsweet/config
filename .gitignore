@@ -39,6 +39,7 @@
 !/ssh/
 !/termite/
 !/update-config.sh
+!/v2ray/
 !/vim/
 /vim/plugged/
 /vim/sessions/
