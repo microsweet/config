@@ -3,6 +3,7 @@
 /*/
 
 #except
+!99-personal-kbd.hwdb
 !/.gitignore
 !/alacritty/
 !/archlinuxcn
@@ -35,8 +36,10 @@
 !/rofi/
 !/Scripts/
 !/settings.xml
+!/ssh/
 !/termite/
 !/update-config.sh
+!/v2ray/
 !/vim/
 /vim/plugged/
 /vim/sessions/

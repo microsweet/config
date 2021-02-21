@@ -179,3 +179,4 @@ alias lg='lazygit'
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 alias sst='func(){ssh -t $1 tmux -u a -d || ssh -t $1 tmux -u new -s test};func'
+alias sudo='sudo -E'
