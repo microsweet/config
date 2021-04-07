@@ -33,8 +33,8 @@ noremap <leader>sou :source $MYVIMRC<CR>
 noremap tb :tabe<CR>
 noremap th :-tabnext<CR>
 noremap tl :+tabnext<CR>
-noremap nd : NERDTreeToggle<CR>
-noremap nf : NERDTreeFind<CR>
+noremap <leader>nd : NERDTreeToggle<CR>
+noremap <leader>nf : NERDTreeFind<CR>
 noremap <LEADER>h <C-w>h
 noremap <LEADER>l <C-w>l
 noremap <LEADER>jj <C-w>j
