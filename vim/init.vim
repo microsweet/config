@@ -49,6 +49,10 @@ noremap res :res
 noremap vres :vertical res 
 noremap <leader>v $v0
 noremap Q :q!<cr>
+inoremap qq <ESC>
+vnoremap qq <ESC>
+
+vnoremap mg Imagnet:?xt=urn:btih:<ESC>
 
 "opening a terminal window
 noremap <LEADER>/ :set splitbelow<CR>:split<CR>:term<CR>
