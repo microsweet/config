@@ -180,3 +180,5 @@ alias lg='lazygit'
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 alias sst='func(){ssh -t $1 tmux -u a -d || ssh -t $1 tmux -u new -s test};func'
 alias sudo='sudo -E'
+
+export LANG=zh_CN.UTF-8
