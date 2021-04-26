@@ -48,7 +48,7 @@ noremap < <<
 noremap res :res 
 noremap vres :vertical res 
 noremap <leader>v $v0
-noremap Q :q!<cr>
+noremap Q :q<cr>
 inoremap qq <ESC>
 vnoremap qq <ESC>
 
