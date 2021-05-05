@@ -175,9 +175,9 @@ workspace "6" output DVI-D-0
 
 
 # Configure border style <normal|1pixel|pixel xx|none|pixel>
-new_window pixel 2
-new_float pixel 2
-default_border pixel 1
+#new_window pixel 2
+#new_float pixel 2
+default_border pixel 3
 default_floating_border normal
 title_align left
 
