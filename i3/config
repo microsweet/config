@@ -119,6 +119,7 @@ exec --no-startup-id nm-applet
 exec --no-startup-id redshift
 exec_always --no-startup-id "mpd ~/.config/mpd/mpd.conf"
 exec_always --no-startup-id i3-layouts
+exec_always --no-startup-id "~/scripts/mobmonitor ttyUSB0"
 
 # Specific applications configration
 for_window [class=".*anbox.*"] floating enable
