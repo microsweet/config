@@ -17,6 +17,7 @@
 !/fish/
 !/fontconfig/
 !/i3/
+!/kernelconfig
 !/local-config
 !/local-config.ini
 !/mpd/
