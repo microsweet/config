@@ -183,3 +183,6 @@ alias sst='func(){ssh -t $1 tmux -u a -d || ssh -t $1 tmux -u new -s test};func'
 alias sudo='sudo -E'
 
 export LANG=zh_CN.UTF-8
+
+#刷新自动补全
+zstyle ':completion:*' rehash true
