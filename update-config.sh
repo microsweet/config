@@ -14,16 +14,17 @@ cp -r ./mpv/ $HOME/.config
 
 cp $HOME/.config/local-config.ini $HOME/.config/polybar/
 
-rm -rf $HOME/.config/nvim
-if [ ! -d "/$HOME/.config/vim-plugin/" ]; then
-	mkdir $HOME/.config/vim-plugin
-else
-	echo '文件夹已存在'
-fi
-cp -r ./vim/ $HOME/.config/nvim
-ln -s $HOME/.config/vim-plugin $HOME/.config/nvim/plugged
-rm -f $HOME/.vim
-ln -s $HOME/.config/nvim $HOME/.vim
+#rm -rf $HOME/.config/nvim
+#if [ ! -d "/$HOME/.config/vim-plugin/" ]; then
+	#mkdir $HOME/.config/vim-plugin
+#else
+	#echo '文件夹已存在'
+#fi
+
+#cp -r ./vim/ $HOME/.config/nvim
+#ln -s $HOME/.config/vim-plugin $HOME/.config/nvim/plugged
+#rm -f $HOME/.vim
+#ln -s $HOME/.config/nvim $HOME/.vim
 cp -r ./fish/ $HOME/.config
 cp -r ./ranger/ $HOME/.config
 cp -r ./neofetch/ $HOME/.config
