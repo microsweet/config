@@ -88,3 +88,10 @@ class fzf_select(Command):
                 self.fm.cd(fzf_file)
             else:
                 self.fm.select_file(fzf_file)
+
+class golines(Command):
+    def execute(self):
+        self.fm.execute_console('move to='+self.rest(1))
+        self.fm.execute_console('move right=1')
+
+
