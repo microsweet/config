@@ -3,13 +3,30 @@
 #window {
     background-color:      #ffffff96;
     border-radius: 4px;
-    width: 366px;
+    width: 336px;
     font: "SF Pro Display 10";
 }
 
+#listview {
+    border: 0px;
+}
+
 #element {
-    background-color:      #00000000;
+    background-color: #00000000;
     border-radius: 4px;
-    padding:    10px 10px 35px 10px;
     spacing: 0;
+}
+
+#element-text {
+	background-color: #ffffff00;
+	padding: 5px;
+}
+
+#element-icon {
+	background-color: #ffffff00;
+}
+
+#element selected {
+    background-color: @xbs;
+    text-color: @xfs;
 }
