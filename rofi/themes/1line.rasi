@@ -11,7 +11,7 @@
     archor: center;
     location: center;
     width: 30%;
-    height: 115px;
+    height: 105px;
 }
 
 #horibox {
