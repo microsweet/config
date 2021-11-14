@@ -9,7 +9,7 @@ OPTIONS="􀀢\n􀀦\n􀀨\n􀀒\n􀁠"
 if [ -f $HOME/.config/rofi-power/config ]; then
   source $HOME/.config/rofi-power/config
 else
-  LAUNCHER="rofi -width 30 -dmenu -i -p power -config ~/.config/rofi/themes/Powermenu.rasi "
+  LAUNCHER="rofi -width 30 -dmenu -i -p power -theme ~/.config/rofi/themes/Powermenu.rasi "
   USE_LOCKER="false"
   LOCKER="i3lock"
 fi
